@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 import 'package:school_management_system/constants/textstyle_constant.dart';
 import 'package:school_management_system/widgets/text_widget.dart';
 
@@ -12,19 +11,19 @@ class NoticeScreen extends StatefulWidget {
 }
 
 class _NoticeScreenState extends State<NoticeScreen> {
-  FlutterTts flutterTts = FlutterTts();
+  // FlutterTts flutterTts = FlutterTts();
   String text = '';
 
   Future<void> _speak() async {
-    await flutterTts.setLanguage('en-US');
-    await flutterTts.setPitch(1.0);
-    await flutterTts.setSpeechRate(0.5);
-    await flutterTts.speak(text);
+    // await flutterTts.setLanguage('en-US');
+    // await flutterTts.setPitch(1.0);
+    // await flutterTts.setSpeechRate(0.5);
+    // await flutterTts.speak(text);
   }
 
   @override
   void dispose() {
-    flutterTts.stop();
+    // flutterTts.stop();
     super.dispose();
   }
 

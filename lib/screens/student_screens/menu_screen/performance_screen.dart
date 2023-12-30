@@ -1,4 +1,4 @@
-import 'package:fl_chart/fl_chart.dart';
+
 import 'package:flutter/material.dart';
 import 'package:school_management_system/constants/color_constant.dart';
 
@@ -20,23 +20,23 @@ class _PerformanceScreenState extends State<PerformanceScreen> {
       child: AspectRatio(
 
         aspectRatio: 1,
-        child:PieChart(
-
-          PieChartData(
-            sectionsSpace: 0,
-            centerSpaceRadius: 0,
-            sections: [
-
-              for(int i=0;i< pieValue.length;i++)
-              PieChartSectionData(
-              radius: 120,
-              value: pieValue[i],
-              color: ColorConstant.subjectColorList[i],
-              ),
-
-            ],
-          ),
-        ),
+        // child:PieChart(
+        //
+        //   PieChartData(
+        //     sectionsSpace: 0,
+        //     centerSpaceRadius: 0,
+        //     sections: [
+        //
+        //       for(int i=0;i< pieValue.length;i++)
+        //       PieChartSectionData(
+        //       radius: 120,
+        //       value: pieValue[i],
+        //       color: ColorConstant.subjectColorList[i],
+        //       ),
+        //
+        //     ],
+        //   ),
+        // ),
       ),
     );
   }

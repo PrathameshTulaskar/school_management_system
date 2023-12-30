@@ -1,4 +1,3 @@
-import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:school_management_system/constants/color_constant.dart';
@@ -139,12 +138,15 @@ Widget subjectName() {
 }
 
 Widget DottedCircle(String title,subtitle) {
-  return DottedBorder(
-    color: ColorConstant.primaryColor.withOpacity(0.5),
-    strokeWidth: 2,
-    dashPattern: [5, 5], // Adjust the dash and gap lengths
-    borderType: BorderType.RRect,
-    radius: Radius.circular(10), // Optional: Rounded corners
+  return Container(
+    decoration: BoxDecoration(
+      color: ColorConstant.primaryColor.withOpacity(0.5),
+      // strokeWidth: 2,
+      // dashPattern: [5, 5], // Adjust the dash and gap lengths
+      // borderType: BorderType.RRect,
+      // border: Radius.circular(10),
+    ),
+// Optional: Rounded corners
     child: Container(
       padding: EdgeInsets.all(10),
       width: double.infinity,
